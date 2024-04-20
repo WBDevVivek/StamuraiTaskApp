@@ -33,7 +33,7 @@ const TableBodyContaintRow: React.FC<TableBodyContaintRowPropsType> = ({ cityDat
             <tr className={`h-[40px] p-4 `}>
                 <td> <Link href={`/weather/${cityName}`} className={`${tableCellStyle} cursor-pointer `}
                     onContextMenu={openLinkInNewTab}
-                    onClick={(e) => setCityName && setCityName((cityName).replace(/[ā]/g, "a"))}
+                    onClick={(e) => setCityName && setCityName(cityName)}
                 >{cityData.id} {(cityName)} </Link></td>
                 <td><span className={`${tableCellStyle} `} >{cityData.cou_name_en} </span> </td>
                 <td><span className={`${tableCellStyle} `} >{cityData.country_code} </span></td>
