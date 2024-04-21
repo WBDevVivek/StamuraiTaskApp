@@ -30,18 +30,8 @@ const CurrTemp: React.FC = ({}): React.JSX.Element => {
 
   }, [cityNameData])
 
-
-
-
   const cityName = cityNameData?.name.replace(/ā/g, "a").replace(/ē/g, "e").replace(/ī/g, "i").replace(/ō/g, "o").replace(/ū/g, "u")
 
-
-
-
-
-
-
-  
   return (
     cityNameData !== undefined ? <section className={`flex w-[98%] md:w-[47%] lg:w-full   h-full  lg:h-1/2 md:mr-0 mb-4 md:mb-0  lg:mb-4 rounded-3xl justify-evenly bg-darkContaintColor`}>
 
